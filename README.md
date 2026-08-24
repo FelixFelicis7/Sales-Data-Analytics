@@ -20,32 +20,32 @@ The queries are built on top of the star-schema warehouse from [Sales-Data-Wareh
 ### 1. Understanding the Data (Exploratory Data Analysis — EDA)
 Getting a clear picture of what the data holds before diving into analysis: the structure of the database, the customer and product dimensions, the time span the sales cover, and the core measures available.
 
-- `00_init_database.sql` — Set up the database and load the data.
-- `01_database_exploration.sql` — Explore the tables and overall structure.
-- `02_dimensions_exploration.sql` — Examine the customer and product dimensions.
-- `03_date_range_exploration.sql` — Identify the time span and boundaries of the sales data.
-- `04_measures_exploration.sql` — Explore the core sales measures and key metrics.
+- `00_init_database` — Set up the database and load the data.
+- `01_database_exploration` — Explore the tables and overall structure.
+- `02_dimensions_exploration` — Examine the customer and product dimensions.
+- `03_date_range_exploration` — Identify the time span and boundaries of the sales data.
+- `04_measures_exploration` — Explore the core sales measures and key metrics.
 
 ### 2. Sales Trends & Performance
 Answering how the business is doing over time: how sales trend month to month and year to year, how they accumulate into growth, and how current performance compares against prior periods and benchmarks.
 
-- `07_change_over_time_analysis.sql` — Track sales trends across months and years.
-- `08_cumulative_analysis.sql` — Running totals and moving averages to measure growth.
-- `09_performance_analysis.sql` — Compare performance against previous periods and averages.
+- `05_change_over_time_analysis` — Track sales trends across months and years.
+- `06_cumulative_analysis` — Running totals and moving averages to measure growth.
+- `07_performance_analysis` — Compare performance against previous periods and averages.
 
 ### 3. Customer & Product Insights
 Understanding who drives sales and what sells: ranking top and bottom performers, sizing sales across categories, grouping customers and products into segments, and measuring how each category contributes to the whole.
 
-- `05_magnitude_analysis.sql` — Compare sales magnitude across dimensions.
-- `06_ranking_analysis.sql` — Rank top and bottom customers, products, and categories.
-- `10_data_segmentation.sql` — Segment customers and products into meaningful groups.
-- `11_part_to_whole_analysis.sql` — Measure each category's contribution to total sales.
+- `08_magnitude_analysis` — Compare sales magnitude across dimensions.
+- `09_ranking_analysis` — Rank top and bottom customers, products, and categories.
+- `10_data_segmentation` — Segment customers and products into meaningful groups.
+- `11_part_to_whole_analysis` — Measure each category's contribution to total sales.
 
 ### 4. Reporting
 Bringing the analysis together into consolidated, analytics-ready views that summarize key metrics for business consumption.
 
-- `12_report_customers.sql` — Consolidated customer report with key metrics and segments.
-- `13_report_products.sql` — Consolidated product report with key metrics and segments.
+- `12_report_customers` — Consolidated customer report with key metrics and segments.
+- `13_report_products` — Consolidated product report with key metrics and segments.
 
 ---
 
@@ -84,19 +84,11 @@ sales-data-analytics/
 │
 ├── scripts/                              # SQL analysis scripts
 │   ├── 00_init_database.sql              # Set up the database and load data
-│   ├── 01_database_exploration.sql       # EDA: database structure
-│   ├── 02_dimensions_exploration.sql     # EDA: customer & product dimensions
-│   ├── 03_date_range_exploration.sql     # EDA: time span of the data
-│   ├── 04_measures_exploration.sql       # EDA: core measures & metrics
-│   ├── 05_magnitude_analysis.sql         # Insights: sales magnitude
-│   ├── 06_ranking_analysis.sql           # Insights: top & bottom performers
-│   ├── 07_change_over_time_analysis.sql  # Trends: sales over time
-│   ├── 08_cumulative_analysis.sql        # Trends: running totals & moving averages
-│   ├── 09_performance_analysis.sql       # Trends: performance vs prior periods
-│   ├── 10_data_segmentation.sql          # Insights: customer & product segments
-│   ├── 11_part_to_whole_analysis.sql     # Insights: category contribution
-│   ├── 12_report_customers.sql           # Reporting: consolidated customer report
-│   └── 13_report_products.sql            # Reporting: consolidated product report
+│   ├── 01_exploratory_analysis.sql       # EDA: database structure
+│   ├── 02_sales_trend_performance.sql    # Analyzing how sales trend over time, accumulate into growth
+│   ├── 03_customer_product_insights.sql  # Ranking, sizing, and segmenting customers and products
+│   ├── 04_report_customers.sql           # Reporting: consolidated customer report
+│   └── 05_report_products.sql            # Reporting: consolidated product report
 │
 ├── README.md                             # Project overview (this file)
 └── .gitignore                            # Files ignored by Git
