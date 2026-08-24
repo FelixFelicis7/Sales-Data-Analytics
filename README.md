@@ -2,11 +2,11 @@
 
 A collection of SQL scripts that turn a sales data warehouse into business insights. The analysis is centered on **sales performance**, enriched with **customer** and **product** data to understand who is buying, what is selling, and how the business is trending over time.
 
-The queries are built on top of the star-schema warehouse from [sales-data-warehouse](https://github.com/YOUR-USERNAME/sales-data-warehouse), and are organized around the business questions they answer rather than the SQL techniques they use.
+The queries are built on top of the star-schema warehouse from [sales-data-warehouse](https://github.com/FelixFelicis7/Sales-Data-Warehouse), and are organized around the business questions they answer rather than the SQL techniques they use.
 
 ## Analysis Themes
 
-### 1. Understanding the Data
+### 1. Understanding the Data (Exploratory Data Analysis EDA)
 Getting a clear picture of what the data holds before diving into analysis: the structure of the database, the customer and product dimensions, the time span the sales cover, and the core measures available.
 
 - `00_init_database.sql` — Set up the database and load the data.
@@ -54,4 +54,4 @@ The analysis draws on three core datasets from the sales data warehouse:
 
 ## Related Project
 
-The data warehouse this analysis is built on lives here: **[sales-data-warehouse](https://github.com/YOUR-USERNAME/sales-data-warehouse)** — an end-to-end SQL data warehouse over customer, sales, and product data, from raw source files to analytics-ready star-schema models.
+The data warehouse this analysis is built on lives here: **[sales-data-warehouse](https://github.com/FelixFelicis7/Sales-Data-Warehouse)** — an end-to-end SQL data warehouse over customer, sales, and product data, from raw source files to analytics-ready star-schema models.
